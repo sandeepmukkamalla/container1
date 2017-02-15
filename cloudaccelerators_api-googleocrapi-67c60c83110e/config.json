@@ -1,0 +1,22 @@
+{
+    "SERVER_PORT" : 3000,
+    "REQ_TIMEOUT" : 1200000,
+    "LOG_DIRECTORY" : "./logs",
+    "ROUTE_VIRTUAL_DIR" : "",
+    "GOOGLE_PROJECT_ID" : "hemantocr",
+    "GOOGLE_API_KEY_FILE" : "./auth_key.json",
+    "LOG_INFO": {
+        "appenders": [
+            {
+                "type": "file",
+                "filename": "./logs/logs.txt",
+                "maxLogSize": 10485760,
+                "numBackups": 10,
+                "compress": true,
+                "encoding": "utf-8",
+                "flags": "w+",
+                "mode": 416
+            }
+        ]
+    }
+}
